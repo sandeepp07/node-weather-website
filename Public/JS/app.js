@@ -28,7 +28,7 @@ weatherForm.addEventListener('submit',(e)=>{
 
 //url - http://localhost:3000/Weather?address=Boston this is the api end point on hitting this api we get the 
 //weather details in form of json in the response
-fetch('http://localhost:3000/Weather?address='+location).then((response)=>{
+fetch('/Weather?address='+location).then((response)=>{
     response.json().then((data)=>
     {
         if(data.Error)

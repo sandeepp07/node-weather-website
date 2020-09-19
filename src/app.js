@@ -4,6 +4,11 @@ const path = require('path')
 //grab the library express\
 const express = require('express');
 //express is actually a function as opposed to something like an object and we call it to create a new express application
+const port = process.env.PORT || 3000;
+
+//process.env.PORT will be availbale on heroku and will be used to listen to our server and on local port 3000 is used to listen for the local server
+
+//the process.env.PORT is our environment port and will be used by heroku to listen to our server and or 3000 is for our local application
 
 //create a new variable to store our Express application.
 const app = express();
@@ -184,8 +189,8 @@ app.get('*',(req,res)=>{
 //A new template to render the error message for both the routes
 
 
-app.listen(3000,()=>{
-    console.log('Server is up on the port 3000');
+app.listen(port,()=>{
+    console.log('Server is up on the port'+port);
 })
 
 console.log(__dirname);
