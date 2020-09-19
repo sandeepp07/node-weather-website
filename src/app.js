@@ -64,7 +64,7 @@ hbs.registerPartials(partialPath);
 //The partials path variable contains the path that the handlebars module needs.
 
 app.get('',(req,res)=>{
-    res.render('index',{
+    res.render('Index',{
         title:'Weather',
         name:'Sandeep Prasad'
     })
