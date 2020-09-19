@@ -9,9 +9,9 @@ const geoCode = (address,callback)=>
         //{body} and replce the response.body by body
             //JSON.parse(response.body);
             const jsonObjectResponse = JSON.parse(response.body);
-            console.log(jsonObjectResponse.features.length.toString());
+            //console.log(jsonObjectResponse.features.length.toString());
             const length = jsonObjectResponse.features.length;            
-            console.log(jsonObjectResponse.features.value);
+            //console.log(jsonObjectResponse.features.value);
             if(error)
             {
                 callback("Unable to connect to the location service",undefined);
@@ -23,7 +23,7 @@ const geoCode = (address,callback)=>
             else if(jsonObjectResponse.features.length===0)
             {
                 //occures when the url is incorrect
-                console.log("Inside the if braces")
+                //console.log("Inside the if braces")
                 callback("Unable to find location.Try another search",undefined);
             }
             else

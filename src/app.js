@@ -193,9 +193,9 @@ app.listen(port,()=>{
     console.log('Server is up on the port'+port);
 })
 
-console.log(__dirname);
+//console.log(__dirname);
 //consist of the path from root of the hard drive to the source folder
-console.log(__filename);
+//console.log(__filename);
 //it provides the path to the file itself
 //Goal is Now we're going to use the dir name variable to get the correct path to the public directory.
 //Goal is We need it to point to the public folder so we can provide express with that path.
