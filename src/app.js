@@ -127,9 +127,9 @@ app.get('/about',(req,res)=>{
 //2.Use the address to geocode
 //3.Use the coordinates to get forecast
 //4.Send back the real forecast and location
-var WeatherForecast = require('./Utils/Forecast');
+//var WeatherForecast = require('./Utils/Forecast');
 var geoCode = require('./Utils/Geocode');
-const Forecast = require('../../weather-app/Utils/Forecast');
+const Forecast = require('./Utils/Forecast');
 app.get('/Weather',(req,res)=>{
     if(!req.query.address)
     {
